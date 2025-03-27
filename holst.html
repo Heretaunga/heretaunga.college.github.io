@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- This is the code for the website setup-->
+	<meta charset="utf-8">
+	<title>Holst - Heretaunga College</title>
+	<meta name="keywords" content="Heretaunga College">
+	<meta name="description" content="">
+	<meta name="author" content="Dheeren Chowdary Nouthalapati">
+	<meta name="copyright" content="Copyright 2023 Dheeren Chowdary Nouthalapati">
+
+	<!-- This is the code for the style/css sheet link-->
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+
+	<!-- This is the code for the font which has been used-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+	<!-- This is the code for the favicon-->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
+
+</head>
+
+<body>
+    <header>
+    
+    <img src="images/logotitle.png" width="550" alt="Heretaunga College Logo">
+    </header>
+    <!-- This is the code for the navigation bar-->
+	<div class="navbar" id="navbar">
+		
+	  		<a href="home.html">Home</a>
+	  		<a href="blockhouse.html">The Blockhouse</a>
+	  		<div class="dropdown">
+  					<button class="dropbtn">Our Wings</button>	
+  			<div class="dropdown-content" id="myDropdown">
+          <a href="wings.html">Our Wings</a>
+    			<a href="taylor.html">Taylor</a>
+    			<a href="callaghan.html">Callaghan</a>
+    			<a href="grace.html">Grace</a>
+    			<a class="active" href="holst.html">Holst</a>
+    			<a href="morgan.html">Morgan</a>
+  			</div>
+      </div>
+        <div class="dropdown2">
+          <button class="dropbtn">Our Houses</button> 
+        <div class="dropdown-content2" id="myDropdown2">
+          <a href="houses.html">Our Houses</a> 
+          <a href="orongo.html">Orongomai</a>
+          <a href="teawa.html">Te Awa Kairangi</a>
+          <a href="toko.html">Tokomaru</a>
+          <a href="remu.html">Remutaka</a>
+  			</div> 
+      </div>
+	</div>
+   <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+    <br>
+    	<h1 class="content">Holst Wing</h1> 
+    <div class="staggered-layout">
+        <div class="item">
+            <img class="left" src="images/holst2.jpg" width="60%" alt="Image 1">
+        </div>
+        <div class="right">
+            <p>Alison Holst is a well-known New Zealand cook, food writer, and television personality. She was born on February 14, 1938, in Dunedin. Alison Holst is widely regarded as one of New Zealand's most trusted and beloved culinary figures, and she has made significant contributions to New Zealand's food culture over the years. Holst has authored numerous cookbooks that have become bestsellers in New Zealand. Her cookbooks cover a wide range of recipes, from traditional Kiwi dishes to international cuisines, and are known for their clear and easy-to-follow instructions. 
+</p>
+        </div>
+        <div class="left">
+            <p>Alison Holst has been a prominent figure on New Zealand television, hosting cooking shows and providing cooking tips and demonstrations. Her television appearances have made her a household name in the country. Throughout her career, Alison Holst has been passionate about teaching people how to cook and enjoy good food. She has contributed to food education in New Zealand through her writing, TV shows, and cooking classes. In recognition of her contributions to the culinary world, Alison Holst was awarded the Queen's Service Medal for services to the food industry in New Zealand. She is often referred to as "New Zealand's cooking guru."
+</p>
+        </div>
+        <div class="item">
+            <img class="right" src="images/holst1.jpg" width="60%" alt="Image 1">
+        </div>
+        
+    </div>
+
+
+
+
+    	<footer>
+			<div class="grid-container">
+			  <div class="grid-item"><h3>Address</h3> <address> Ward Street<br> Upper Hutt, 5018<br> New Zealand<br></address></div>
+			  <div class="grid-item"><img class="footer-img" src="images/logo.png" alt="School Logo"> </div>
+			  <div class="grid-item"><h3>Contact Us</h3> <address>Phone: +64 4 939 9370 <br>Email: info@heretaunga.school.nz</address></div>  
+
+			</div>
+    
+    	</footer>

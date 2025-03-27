@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- This is the code for the website setup-->
+	<meta charset="utf-8">
+	<title>Remutaka - Heretaunga College</title>
+	<meta name="keywords" content="Heretaunga College">
+	<meta name="description" content="">
+	<meta name="author" content="Dheeren Chowdary Nouthalapati">
+	<meta name="copyright" content="Copyright 2023 Dheeren Chowdary Nouthalapati">
+
+	<!-- This is the code for the style/css sheet link-->
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+
+	<!-- This is the code for the font which has been used-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+	<!-- This is the code for the favicon-->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
+
+</head>
+
+<body>
+    <header>
+    
+    <img src="images/logotitle.png" width="550" alt="Heretaunga College Logo">
+    </header>
+    <!-- This is the code for the navigation bar-->
+	<div class="navbar"id="navbar">
+		
+	  		<a href="home.html">Home</a>
+	  		<a href="blockhouse.html">The Blockhouse</a>
+	  		<div class="dropdown">
+  				  <button class="dropbtn">Our Wings</button>  
+            <div class="dropdown-content" id="myDropdown">
+          <a href="wings.html">Our Wings</a>
+                <a href="taylor.html">Taylor</a>
+                <a href="callaghan.html">Callaghan</a>
+                <a href="grace.html">Grace</a>
+                <a href="holst.html">Holst</a>
+                <a href="morgan.html">Morgan</a>
+            </div>
+      </div>
+        <div class="dropdown2">
+          <button class="dropbtn">Our Houses</button> 
+        <div class="dropdown-content2" id="myDropdown2">
+          <a href="houses.html">Our Houses</a> 
+          <a href="orongo.html">Orongomai</a>
+          <a href="teawa.html">Te Awa Kairangi</a>
+          <a href="toko.html">Tokomaru</a>
+          <a class="active" href="remu.html">Remutaka</a>
+  			</div> 
+      </div>
+	</div>
+   <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+    <br><div class="content">
+    	<h1 >Remutaka</h1> 
+            <img src="images/remu1.jpeg" width="33.1%" alt="Image 1">
+            <img src="images/remu2.jpg" width="33.1%" alt="Image 1">
+            <img src="images/remu3.jpg" width="33.1%" alt="Image 1">
+  
+        <p>The Remutaka Hill, formerly known as Rimutaka, is a significant geographic feature near Upper Hutt. It is part of the Remutaka Range, which runs roughly parallel to the southern coast of the North Island, separating the Wellington region from the Wairarapa region to the east. The Remutaka Ranges extend approximately 47 kilometres from SH2 in the north to Turakirae Head in the south. </p>
+
+        <p>Following a treaty settlement, Rimutaka had its name changed to Remutaka. Rimutaka has no meaning in te reo Māori, while Remutaka means “sitting down to rest”. Remutaka means “edge of his cape touching the ground on that spot”. Remu means “edge”. Taka means “ground”. It is said that Haunui–a–Nanaia of the Kurahaupō people was resting or sitting on the pass while looking over Wairarapa when he first saw these ranges. Remu can also be translated to mean “buttocks” and Taka to mean “rest”. He travelled from the West Coast in search of his wife. He climbed up through all the hills and stopped to have a rest, to take in the view and contemplate his situation. It was named as part of his journey of discovery across the southern North Island. In 2017 the name changed from Rimutaka to Remutaka. </p>
+
+        <p>The area around the Remutaka Hill has been inhabited by Māori tribes for centuries. The Māori people have deep connections to the land, and the Remutaka Range would have held significance for them both spiritually and as a source of resources. </p>
+
+        <p>The Remutaka Hill has long been an important transportation route. In the 19th century, it was traversed by early European settlers, often by foot or on horseback. As transportation technology advanced, the hill became a key route for stagecoaches and later for motor vehicles. In the late 19th and early 20th centuries, the construction of railways became a significant engineering feat in New Zealand. The Rimutaka Incline, a section of the Wairarapa Line that crossed the Remutaka Range, was particularly challenging due to the steep terrain. The construction of tunnels and the famous Rimutaka Incline railway helped connect the Wellington region with the Wairarapa region. </p>
+
+            <img src="images/remu4.png" width="33.1%" alt="Image 1">
+            <img src="images/remu5.png" width="33.1%" alt="Image 1">
+            <img src="images/remu6.jfif" width="33.1%" alt="Image 1">
+
+    </div>
+    
+
+
+
+
+    	<footer>
+			<div class="grid-container">
+			  <div class="grid-item"><h3>Address</h3> <address> Ward Street<br> Upper Hutt, 5018<br> New Zealand<br></address></div>
+			  <div class="grid-item"><img class="footer-img" src="images/logo.png" alt="School Logo"> </div>
+			  <div class="grid-item"><h3>Contact Us</h3> <address>Phone: +64 4 939 9370 <br>Email: info@heretaunga.school.nz</address></div>  
+
+			</div>
+    
+    	</footer>

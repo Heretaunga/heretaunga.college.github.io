@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- This is the code for the website setup-->
+	<meta charset="utf-8">
+	<title>Home - Heretaunga College</title>
+	<meta name="keywords" content="Heretaunga College">
+	<meta name="description" content="">
+	<meta name="author" content="Dheeren Chowdary Nouthalapati">
+	<meta name="copyright" content="Copyright 2023 Dheeren Chowdary Nouthalapati">
+
+	<!-- This is the code for the style/css sheet link-->
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+
+	<!-- This is the code for the font which has been used-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+	<!-- This is the code for the favicon-->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
+
+</head>
+
+<body>
+    <header>
+    
+    <img src="images/logotitle.png" width="550" alt="Heretaunga College Logo">
+    </header>
+    <!-- This is the code for the navigation bar-->
+	<div class="navbar" id="navbar">
+		
+	  		<a class="active" href="home.html">Home</a>
+	  		<a href="blockhouse.html">The Blockhouse</a>
+	  		<div class="dropdown">
+  				<button class="dropbtn">Our Wings</button>	
+  			<div class="dropdown-content" id="myDropdown">
+          <a href="wings.html">Our Wings</a>
+    			<a href="taylor.html">Taylor</a>
+    			<a href="callaghan.html">Callaghan</a>
+    			<a href="grace.html">Grace</a>
+    			<a href="holst.html">Holst</a>
+    			<a href="morgan.html">Morgan</a>
+  			</div>
+      </div>
+        <div class="dropdown2">
+          <button class="dropbtn">Our Houses</button> 
+        <div class="dropdown-content2" id="myDropdown2">
+          <a href="houses.html">Our Houses</a> 
+          <a href="orongo.html">Orongomai</a>
+          <a href="teawa.html">Te Awa Kairangi</a>
+          <a href="toko.html">Tokomaru</a>
+          <a href="remu.html">Remutaka</a>
+  			</div> 
+      </div>
+	  		
+	</div>
+  <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+    <br>
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img class="slideimg" src="images/schoolfront.jpg" style="width:100%" alt="Photo of Front of School">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img class="slideimg" src="images/staffview.jpg" style="width:100%" alt="Photo from Inside of Staffroom Looking out at Quad">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img class="slideimg" src="images/hcday.jpg" style="width:100%" alt="Photo of Students on HC Day in the Sports Centre">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img class="slideimg" src="images/hillview.jpg" style="width:100%" alt="Photo of Quad">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img class="slideimg" src="images/flagposts.jpg" style="width:100%" alt="Photo of house flag posts">
+
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" activeslide", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " activeslide";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+    <br>
+    <div class="content">
+    	<h1>Home</h1>
+    	<p>Heretaunga College was founded in 1954 in response to the urban growth, which accompanied the post-war boom years. It was Upper Hutt's first state secondary school. It opened with 142 third formers (Year 9’s) and seven teachers; John Thurston was the principal. By 1963 the school had 800 students and 33 teachers. John Thurston, held the position until 1968. </p>
+
+    	<p>Trevor Edmonds was his successor until 1974 when John Craig took up office. Brian Robb assumed the position in October 1988. Bruce Hart became Principal in 2003 and Fiona Craven was the first female Principal in 2019 when he retired. There are two intermediate schools in Upper Hutt, with Maidstone Intermediate the older and larger, being the main contributor to Heretaunga College. </p>
+
+    	<h2>School Crest and Motto</h2>
+    	<p>The Phoenix - the story of this mythological creature, which was said to be born from the ashes of its parents, arose in Egypt. It provided an illustration for sermons and was popular with poets. Because of the stories associated with it, the Phoenix became a symbol of rebirth to new life, and was regarded as the king of the birds. When applied to the school it symbolises how the school is rejuvenated by each new intake - how it is continuously growing, and changing. </p>
+
+    	<p>The philosophy of the College is reflected in its crest (the Phoenix) and motto (‘Kia Hiwa Ra’ - Be Alert, Be Awake); that growth and development will occur if students are awake and alert to the many opportunities and challenges the school offers. Academic emphasis is balanced by a concern for the individual’s personal and social development. </p>
+
+    	<p>As part of the growth and learning process, high priority is given to preparation for employment, tertiary education and leisure; skills of self-management; respect for others; and enhancement of individual confidence and self-esteem. A positive partnership between college, home and community is developed and nurtured. </p>
+
+    	<h2>Pride Values</h2>
+    	<p>At Heretaunga College we have our Pride Values. In 2012 we became a Positive Behaviour for Learning (PB4L) school. This meant that as a school we came up with a set of values that would shape how we behaved in the classroom, on campus and in our community. The PB4L Team revisited these values in 2020 to make sure they are still relevant to our school today. </p>
+
+    	<p>Our PRIDE values are as follows:<br> Participation - Whai wāhitanga <br> Respect - Manaakitanga <br> Integrity - Ngākau Pono <br> Determination - Te Hiringa <br> Empathy - Aroha </p>
+</div>
+    	<footer>
+			<div class="grid-container">
+			  <div class="grid-item"><h3>Address</h3> <address> Ward Street<br> Upper Hutt, 5018<br> New Zealand<br></address></div>
+			  <div class="grid-item"><img class="footer-img" src="images/logo.png" alt="School Logo"> </div>
+			  <div class="grid-item"><h3>Contact Us</h3> <address>Phone: +64 4 939 9370 <br>Email: info@heretaunga.school.nz</address></div>  
+
+			</div>
+    
+    	</footer>

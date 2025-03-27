@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- This is the code for the website setup-->
+	<meta charset="utf-8">
+	<title>The Blockhouse - Heretaunga College</title>
+	<meta name="keywords" content="Heretaunga College">
+	<meta name="description" content="">
+	<meta name="author" content="Dheeren Chowdary Nouthalapati">
+	<meta name="copyright" content="Copyright 2023 Dheeren Chowdary Nouthalapati">
+
+	<!-- This is the code for the style/css sheet link-->
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+
+	<!-- This is the code for the font which has been used-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+	<!-- This is the code for the favicon-->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
+
+</head>
+
+<body>
+    <header>
+    
+    <img src="images/logotitle.png" width="550" alt="Heretaunga College Logo">
+    </header>
+    <!-- This is the code for the navigation bar-->
+	<div class="navbar" id="navbar">
+		
+	  		<a href="home.html">Home</a>
+	  		<a class="active" href="blockhouse.html">The Blockhouse</a>
+	  		<div class="dropdown">
+  				  <button class="dropbtn">Our Wings</button>  
+            <div class="dropdown-content" id="myDropdown">
+          <a href="wings.html">Our Wings</a>
+                <a href="taylor.html">Taylor</a>
+                <a href="callaghan.html">Callaghan</a>
+                <a href="grace.html">Grace</a>
+                <a href="holst.html">Holst</a>
+                <a href="morgan.html">Morgan</a>
+            </div>
+      </div>
+        <div class="dropdown2">
+          <button class="dropbtn">Our Houses</button> 
+        <div class="dropdown-content2" id="myDropdown2">
+          <a href="houses.html">Our Houses</a> 
+          <a href="orongo.html">Orongomai</a>
+          <a href="teawa.html">Te Awa Kairangi</a>
+          <a href="toko.html">Tokomaru</a>
+          <a href="remu.html">Remutaka</a>
+  			</div> 
+      </div>
+	</div>
+   <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+    <br>
+    	<h1 class="content">The Blockhouse</h1> 
+    <div class="staggered-layout">
+        <div class="item">
+            <img class="left" src="images/bh1.jpg" width="60%" alt="Image 1">
+        </div>
+        <div class="right">
+            <p>The Upper Hutt Blockhouse is one of the few remaining buildings associated with the New Zealand Wars, as well as a monument to Pākehā settler anxiety, built in fear of an attack by Māori that never came. The Blockhouse, located on the grounds of Heretaunga College, is therefore a historic structure. It holds significance in the region and has a unique history. This building is a remnant from the early days of European settlement in the Wellington region. </p>
+        </div>
+        <div class="left">
+            <p>The Blockhouse is one of the oldest European-built structures in the Wellington region. It was constructed in 1860-1861 during the New Zealand Wars, also known as the Land Wars, which were a series of conflicts between Māori and British colonial forces in the mid-19th century. The Blockhouse was built as a defensive structure during this turbulent period. Its primary purpose was to provide shelter and protection for European settlers in the event of an attack by Māori tribes during the New Zealand Wars. Blockhouses were small, heavily fortified buildings used for defence, and they were strategically placed in vulnerable areas.</p>
+        </div>
+        <div class="item">
+            <img class="right" src="images/bh2.png" width="60%" alt="Image 1">
+        </div>
+        <div class="item">
+            <img class="left" src="images/bh3.jpg" width="60%" alt="Image 1">
+        </div>
+        <div class="right">
+            <p>The Blockhouse was built using local materials, primarily native timber, and it features thick walls and narrow firing slits to provide cover for those inside. It was designed to withstand attacks and provide a secure location for settlers in times of conflict. Over the years, The Blockhouse has been preserved as a historic site, offering visitors a glimpse into New Zealand's colonial history. It has undergone restoration and maintenance to ensure its continued existence as a historical landmark.</p>
+        </div>
+    </div>
+
+
+
+
+    	<footer>
+			<div class="grid-container">
+			  <div class="grid-item"><h3>Address</h3> <address> Ward Street<br> Upper Hutt, 5018<br> New Zealand<br></address></div>
+			  <div class="grid-item"><img class="footer-img" src="images/logo.png" alt="School Logo"> </div>
+			  <div class="grid-item"><h3>Contact Us</h3> <address>Phone: +64 4 939 9370 <br>Email: info@heretaunga.school.nz</address></div>  
+
+			</div>
+    
+    	</footer>
